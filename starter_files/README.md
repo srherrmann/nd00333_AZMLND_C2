@@ -78,16 +78,16 @@ Since we are working on automation and cannot trigger each machine learning task
 A service principal is used to provide automated and authenticated access to Azure resources like compute and storage.
 
 We use the az command line interface and specifically the "az role assignment command":
-![Creation of a service principal](Step_1_service_principal_created.png)
+![Creation of a service principal](Step_1_service_principal_created.PNG)
 This command has replaced the older "az ml workspace share" which is now deprecated.
 
 Here are details about the created service principal:
-![Details of the service principal](Step_1_service_principal_details.png)
+![Details of the service principal](Step_1_service_principal_details.PNG)
 
 ### Step 2: Automated ML experiment
 To train the model for our bankmarketing use case, we first have to make the dataset available in our Azure ML workspace.
 We upload the .csv file and get a first look that the content of the data.
-![Data set upload](Step_2_bank_marketing_dataset_is_available.png)
+![Data set upload](Step_2_bank_marketing_dataset_is_available.PNG)
 
 Next, we run an AutoML experiment on this dataset, optimizing the weighted area under the curve (AUC) metric.
 After running the AutoML experiment, we can see the completion status and the best model selected.
